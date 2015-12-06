@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/repName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Reponame"
+        android:layout_toLeftOf="@+id/fork"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repName"
+        android:layout_toRightOf="@+id/str_ic"
+        android:text="stars"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@id/str_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/star"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/repName"
+        android:src="@drawable/ic_star" />
+
+    <TextView
+        android:id="@id/fork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/repName"
+        android:layout_toLeftOf="@+id/frk_ic"
+        android:gravity="right"
+        android:text="forks"
+
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@id/frk_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_fork" />
+
+    <ImageView
+        android:id="@+id/wtch_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_watch"
+        android:layout_alignBottom="@+id/watcher"
+        android:layout_alignTop="@+id/watcher"
+        android:layout_toRightOf="@+id/fork"
+        android:layout_toEndOf="@+id/fork" />
+
+    <TextView
+        android:id="@+id/watcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/fork"
+        android:layout_toLeftOf="@+id/wtch_ic"
+        android:layout_toRightOf="@id/star"
+        android:layout_alignBottom="@+id/star"
+        android:gravity="right"
+        android:layout_alignBaseline="@id/star"
+        android:textSize="20sp"
+        android:text="125642"/>
+
+</RelativeLayout> <!-- . В каждой ячейке списка - название репозитория, количество звезд, форков и watch-ей -->

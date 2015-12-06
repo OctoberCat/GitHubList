@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GitHubListFR</string>
+    <string name="action_settings">Refresh</string>
+    <string name="description">Description:</string>
+    <string name="url">Project Url:</string>
+    <string name="language">Language:</string>
+
+
+</resources>
